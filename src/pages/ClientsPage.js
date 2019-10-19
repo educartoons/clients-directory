@@ -1,37 +1,22 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React from "react";
 
 import Clients from "../components/Clients";
 import Insights from "../components/Insights";
+import WrapperStyles from "../components/styles/WrapperStyles";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  > div {
-    box-flex: 1;
-    flex-basis: 0;
-    flex-grow: 1;
-    padding: 0 1em;
-  }
-`;
-
-class ClientsPage extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <div>
-          <h2>Clientes:</h2>
-          <Clients />
-        </div>
-        <div>
-          <h2>Insights:</h2>
-          <Insights />
-        </div>
-      </Wrapper>
-    );
-  }
-}
+const ClientsPage = () => {
+  return (
+    <WrapperStyles>
+      <div>
+        <h2>Clientes:</h2>
+        <Clients />
+      </div>
+      <div>
+        <h2>Insights:</h2>
+        <Insights />
+      </div>
+    </WrapperStyles>
+  );
+};
 
 export default ClientsPage;

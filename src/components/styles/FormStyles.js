@@ -30,6 +30,7 @@ const FormStyles = styled.form`
     cursor: pointer;
     font-family: "Muli", sans-serif;
     font-size: 1em;
+    margin: 0 0 1em 0;
     padding: 0.9em 1.2em;
     &:disabled {
       background-color: #9f85da;
